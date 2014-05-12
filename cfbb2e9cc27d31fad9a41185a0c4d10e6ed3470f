@@ -1,0 +1,187 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ea713054_6de7354b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-05-12T01:31:49Z",
+      "side": 1,
+      "message": "It would be better to put this in a footer line.\n\n  Depends-On: I5d0aeac51b83bf14150fa3036f71965cf2051243",
+      "revId": "cfbb2e9cc27d31fad9a41185a0c4d10e6ed3470f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a75a43d_6e108f70",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/motd/DisplayMotd.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-05-12T01:31:49Z",
+      "side": 1,
+      "message": "or here",
+      "range": {
+        "startLine": 59,
+        "startChar": 36,
+        "endLine": 59,
+        "endChar": 37
+      },
+      "revId": "cfbb2e9cc27d31fad9a41185a0c4d10e6ed3470f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a75a43d_4e13537e",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/motd/DisplayMotd.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 59,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-05-12T01:31:49Z",
+      "side": 1,
+      "message": "nit: no spaces here",
+      "range": {
+        "startLine": 59,
+        "startChar": 13,
+        "endLine": 59,
+        "endChar": 14
+      },
+      "revId": "cfbb2e9cc27d31fad9a41185a0c4d10e6ed3470f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ea713054_0df471f5",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/motd/DisplayMotd.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 64,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-05-12T01:31:49Z",
+      "side": 1,
+      "message": "nit: add a blank line before this method",
+      "revId": "cfbb2e9cc27d31fad9a41185a0c4d10e6ed3470f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a75a43d_0e0d4b53",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/motd/MotdFileBasedConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 82,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-05-12T01:31:49Z",
+      "side": 1,
+      "message": "unnecessary line break?",
+      "range": {
+        "startLine": 81,
+        "startChar": 10,
+        "endLine": 82,
+        "endChar": 8
+      },
+      "revId": "cfbb2e9cc27d31fad9a41185a0c4d10e6ed3470f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ea713054_2df12d06",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/motd/Subnet.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-05-12T01:31:49Z",
+      "side": 1,
+      "message": "Nit: Indent should be 2 spaces.",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 33,
+        "endChar": 5
+      },
+      "revId": "cfbb2e9cc27d31fad9a41185a0c4d10e6ed3470f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a75a43d_2e0a873c",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/motd/SubnetConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-05-12T01:31:49Z",
+      "side": 1,
+      "message": "Nit: Indentation.",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 36,
+        "endChar": 5
+      },
+      "revId": "cfbb2e9cc27d31fad9a41185a0c4d10e6ed3470f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a75a43d_ee28ffa6",
+        "filename": "src/main/resources/Documentation/about.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-05-12T01:31:49Z",
+      "side": 1,
+      "message": "Also add documentation of the configuration in config.md?",
+      "revId": "cfbb2e9cc27d31fad9a41185a0c4d10e6ed3470f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0a75a43d_ce23c3ca",
+        "filename": "src/main/resources/Documentation/about.md",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1011123
+      },
+      "writtenOn": "2014-05-12T01:31:49Z",
+      "side": 1,
+      "message": "Add a period at the end of the sentence.",
+      "revId": "cfbb2e9cc27d31fad9a41185a0c4d10e6ed3470f",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
