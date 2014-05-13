@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ea5a10dc_45180a90",
+        "filename": "BUCK",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-05-13T21:28:15Z",
+      "side": 1,
+      "message": "You are missing resources:\n\n resources \u003d glob([\u0027src/main/resources/**/*\u0027]),\n\nYou can easily verify it: Documentation is not available, when you deploy it or, alternatively you can verify the content of motd.jar file and immediately see, that all your *.md files are missing:\n\n  $ unzip -t buck-out/gen/plugins/motd/motd.jar\n    Archive:  buck-out/gen/plugins/motd/motd.jar\n    testing: com/\n    testing: com/googlesource/\n    testing: com/googlesource/gerrit/\n    testing: com/googlesource/gerrit/plugins/\n    testing: com/googlesource/gerrit/plugins/motd/\n    testing: com/googlesource/gerrit/plugins/motd/DisplayMotd.class\n    testing: com/googlesource/gerrit/plugins/motd/Module.class\n    testing: com/googlesource/gerrit/plugins/motd/Subnet.class\n    testing: com/googlesource/gerrit/plugins/motd/OnStartStop.class\n    testing: com/googlesource/gerrit/plugins/motd/SubnetConfig.class\n    testing: com/googlesource/gerrit/plugins/motd/MotdFileBasedConfig.class\n    testing: com/googlesource/gerrit/plugins/motd/MotdConfig.class\n    testing: META-INF/MANIFEST.MF",
+      "revId": "d82bb106234ba4700d7f81e4527028964023d339",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4a8b1c70_904b94e4",
+        "filename": "BUCK",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-05-13T21:28:15Z",
+      "side": 1,
+      "message": "We always put a comma at the end of list.",
+      "range": {
+        "startLine": 8,
+        "startChar": 69,
+        "endLine": 8,
+        "endChar": 70
+      },
+      "revId": "d82bb106234ba4700d7f81e4527028964023d339",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
