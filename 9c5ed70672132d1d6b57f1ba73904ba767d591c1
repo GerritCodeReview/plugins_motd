@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6a0d40e9_b9d5df56",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/motd/MotdFileBasedConfig.java",
+        "patchSetId": 5
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-05-13T21:47:43Z",
+      "side": 1,
+      "message": "Can you simplify the plugin own config file handling by using PluginConfigFactory? A lá:\n \n @Inject\n com.google.gerrit.server.config.PluginConfigFactory cfg;\n [...]\n String[] reviewers \u003d \n     cfg.getGlobalPluginConfig(\"default-reviewer\")\n        .getStringList(\"branch\", \"refs/heads/master\", \"reviewer\");\n\nSee [1] for details:\n\n [1] https://gerrit-review.googlesource.com/Documentation/dev-plugins.html#configuration",
+      "range": {
+        "startLine": 41,
+        "startChar": 2,
+        "endLine": 41,
+        "endChar": 39
+      },
+      "revId": "9c5ed70672132d1d6b57f1ba73904ba767d591c1",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
