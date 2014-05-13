@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ca7e2c25_acfd23d6",
+        "filename": "BUCK",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1012612
+      },
+      "writtenOn": "2014-05-13T16:04:41Z",
+      "side": 1,
+      "message": "Yep, I did. :(",
+      "parentUuid": "4a8b1c70_30ef4891",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 32
+      },
+      "revId": "278fa62fe8ff6a27560d76d4d420e3c77f73e408",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "ea5a10dc_050d3253",
         "filename": "BUCK",
         "patchSetId": 2
@@ -36,6 +60,30 @@
       "writtenOn": "2014-05-13T16:00:18Z",
       "side": 1,
       "message": "Unnecessary. As you can see in definition of gerrit_plugin() rule, deps param is optional and defaulting to empty set: [1].\n\n[1] https://gerrit.googlesource.com/gerrit/+/master/tools/default.defs",
+      "range": {
+        "startLine": 6,
+        "startChar": 2,
+        "endLine": 7,
+        "endChar": 4
+      },
+      "revId": "278fa62fe8ff6a27560d76d4d420e3c77f73e408",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6a6f0077_c9fe51d4",
+        "filename": "BUCK",
+        "patchSetId": 2
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1012612
+      },
+      "writtenOn": "2014-05-13T16:04:41Z",
+      "side": 1,
+      "message": "Good to know.",
+      "parentUuid": "ea5a10dc_050d3253",
       "range": {
         "startLine": 6,
         "startChar": 2,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "6a6f0077_e903152d",
+        "filename": "BUCK",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1012612
+      },
+      "writtenOn": "2014-05-13T16:04:41Z",
+      "side": 1,
+      "message": "The Implementation-* definitions. seem to be optional.  I can certainly add some of them, though.  At the very least, makes sense to include the title and URL.",
+      "parentUuid": "4a8b1c70_d01cbc01",
+      "range": {
+        "startLine": 13,
+        "startChar": 2,
+        "endLine": 16,
+        "endChar": 4
+      },
+      "revId": "278fa62fe8ff6a27560d76d4d420e3c77f73e408",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4a8b1c70_f021c03a",
         "filename": "BUCK",
         "patchSetId": 2
@@ -82,6 +154,30 @@
       "writtenOn": "2014-05-13T16:00:18Z",
       "side": 1,
       "message": "Default would be PUBLIC. I am not sure if this rule needs to be visible (in which case you can remove it)? , e. g. from tools/eclipse/project.py.",
+      "range": {
+        "startLine": 17,
+        "startChar": 2,
+        "endLine": 17,
+        "endChar": 12
+      },
+      "revId": "278fa62fe8ff6a27560d76d4d420e3c77f73e408",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ca7e2c25_4c135f7e",
+        "filename": "BUCK",
+        "patchSetId": 2
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1012612
+      },
+      "writtenOn": "2014-05-13T16:04:41Z",
+      "side": 1,
+      "message": "I would think this as the empty set, could be removed.",
+      "parentUuid": "4a8b1c70_f021c03a",
       "range": {
         "startLine": 17,
         "startChar": 2,
