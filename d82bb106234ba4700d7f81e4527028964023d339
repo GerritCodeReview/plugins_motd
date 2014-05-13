@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "ca7e2c25_8c2dc7b5",
+        "filename": "BUCK",
+        "patchSetId": 4
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1012612
+      },
+      "writtenOn": "2014-05-13T21:33:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ea5a10dc_45180a90",
+      "revId": "d82bb106234ba4700d7f81e4527028964023d339",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "4a8b1c70_904b94e4",
         "filename": "BUCK",
         "patchSetId": 4
@@ -30,6 +48,30 @@
       "writtenOn": "2014-05-13T21:28:15Z",
       "side": 1,
       "message": "We always put a comma at the end of list.",
+      "range": {
+        "startLine": 8,
+        "startChar": 69,
+        "endLine": 8,
+        "endChar": 70
+      },
+      "revId": "d82bb106234ba4700d7f81e4527028964023d339",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ca7e2c25_ec280ba7",
+        "filename": "BUCK",
+        "patchSetId": 4
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1012612
+      },
+      "writtenOn": "2014-05-13T21:33:41Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4a8b1c70_904b94e4",
       "range": {
         "startLine": 8,
         "startChar": 69,
