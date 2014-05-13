@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4a8b1c70_700e30c3",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/motd/DisplayMotd.java",
+        "patchSetId": 3
+      },
+      "lineNbr": 37,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2014-05-13T16:52:02Z",
+      "side": 1,
+      "message": "Any reasons why you are using filed and not ctor injection here? In all other files in this change you are using ctor injection. We prefer not to use it filed injection. Only SSH commands make an exception here.",
+      "range": {
+        "startLine": 33,
+        "startChar": 2,
+        "endLine": 37,
+        "endChar": 28
+      },
+      "revId": "03565ba02e642355c9bdac356a54111517ca9aaa",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
