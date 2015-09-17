@@ -13,6 +13,7 @@
 // limitations under the License.
 package com.googlesource.gerrit.plugins.motd;
 
+import com.google.common.base.Joiner;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.Lists;
 import com.google.gerrit.server.config.SitePaths;
@@ -81,7 +82,8 @@ public class MotdFileBasedConfig implements MotdConfig {
           config.getFile(), e.getMessage()), e);
     }
 
-    motd = config.getString("gerrit", null, "motd");
+    String[] motdLines = config.getStringList("gerrit", null, "motd");
+    motd = Joiner.on("\n").join(motdLines);
 
     ImmutableList.Builder<Subnet> subnetlist = ImmutableList.builder();
     for (SubnetConfig c : allSubnets(config)) {
