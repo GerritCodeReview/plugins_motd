@@ -116,8 +116,7 @@ public class MotdFileBasedConfig implements MotdConfig {
     return motd;
   }
 
-  private static List<SubnetConfig> allSubnets(FileBasedConfig cfg)
-      throws ConfigInvalidException {
+  private static List<SubnetConfig> allSubnets(FileBasedConfig cfg) {
     Set<String> names = cfg.getSubsections("subnet");
     List<SubnetConfig> result = Lists.newArrayListWithCapacity(names.size());
     for (String name : names) {
