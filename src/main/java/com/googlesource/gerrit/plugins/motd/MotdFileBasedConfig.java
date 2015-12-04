@@ -45,7 +45,7 @@ public class MotdFileBasedConfig implements MotdConfig {
   public MotdFileBasedConfig(final SitePaths site)
       throws ConfigInvalidException, IOException {
     this.cfgPath = new File(site.etc_dir, "motd.config");
-    log.info("Loading configuration from " + cfgPath);
+    log.info("Loading configuration dsfs  xx sdaaaadsf from " + cfgPath);
     this.config = new FileBasedConfig(cfgPath, FS.DETECTED);
     this.subnets = allSubnets();
   }

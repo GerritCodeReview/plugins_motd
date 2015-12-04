@@ -18,21 +18,21 @@ import com.google.gerrit.extensions.events.LifecycleListener;
 import com.google.inject.Inject;
 
 class OnStartStop implements LifecycleListener {
-  private final MotdConfig config;
-
   @Inject
-  OnStartStop(MotdConfig config) {
-    // Set up a config so we load the config at startup.
-    this.config = config;
+  OnStartStop(@SuppressWarnings("unused") MotdConfig config) {
+    // Do nothing.
+    // The config is unused. We only need to get it injected so it's
+    // loaded on startup rather than lazily when it's referenced for
+    // the first time.
   }
 
   @Override
   public void start() {
-    /* do nothing */
+    // Do nothing.
   }
 
   @Override
   public void stop() {
-    /* do nothing */
+    // Do nothing.
   }
 }
