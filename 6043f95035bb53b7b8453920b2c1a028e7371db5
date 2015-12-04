@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a0407443_90e9f4d7",
+        "filename": "src/main/java/com/googlesource/gerrit/plugins/motd/MotdFileBasedConfig.java",
+        "patchSetId": 1
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1012612
+      },
+      "writtenOn": "2015-12-04T04:45:43Z",
+      "side": 1,
+      "message": "debug?",
+      "range": {
+        "startLine": 48,
+        "startChar": 35,
+        "endLine": 48,
+        "endChar": 55
+      },
+      "revId": "6043f95035bb53b7b8453920b2c1a028e7371db5",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
