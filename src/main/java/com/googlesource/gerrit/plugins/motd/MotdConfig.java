@@ -15,7 +15,7 @@ package com.googlesource.gerrit.plugins.motd;
 
 import java.util.List;
 
-public interface MotdConfig {
+interface MotdConfig {
 
   List<Subnet> getSubnets();
 
