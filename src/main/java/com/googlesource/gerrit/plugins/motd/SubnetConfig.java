@@ -13,13 +13,13 @@
 // limitations under the License.
 package com.googlesource.gerrit.plugins.motd;
 
-import org.eclipse.jgit.storage.file.FileBasedConfig;
+import org.eclipse.jgit.lib.Config;
 
 class SubnetConfig {
   private String motd;
   private String subnet;
 
-  public SubnetConfig(final FileBasedConfig c, final String name) {
+  public SubnetConfig(Config c, String name) {
     this.motd = c.getString("subnet", name, "motd");
     if (this.motd == null) {
       this.motd = "";

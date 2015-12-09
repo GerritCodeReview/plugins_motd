@@ -17,13 +17,15 @@ package com.googlesource.gerrit.plugins.motd;
 import com.google.gerrit.extensions.events.LifecycleListener;
 import com.google.inject.Inject;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 class OnStartStop implements LifecycleListener {
+  static final Logger log = LoggerFactory.getLogger(OnStartStop.class);
+
   @Inject
-  OnStartStop(@SuppressWarnings("unused") MotdConfig config) {
-    // Do nothing.
-    // The config is unused. We only need to get it injected so it's
-    // loaded on startup rather than lazily when it's referenced for
-    // the first time.
+  OnStartStop(MotdConfig config) {
+    log.info("Message of the day: " + config.getMotd());
   }
 
   @Override
