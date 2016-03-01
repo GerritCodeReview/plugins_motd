@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "62684971_07fc565c",
+        "filename": "BUCK",
+        "patchSetId": 1
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "2016-03-01T05:51:48Z",
+      "side": 1,
+      "message": "The correct fix is to remove this line. It\u0027s exported in plugin-api and this library is added to the deps in gerrit_plugin() itself.",
+      "revId": "a1dd9a839600197a7a2d97be1cfc2e775fe0ee4d",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
