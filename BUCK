@@ -10,7 +10,6 @@ gerrit_plugin(
   ],
   # Deps shared with Gerrit but not in the plugin API.
   provided_deps = [
-    '//lib/jgit:jgit',
     '//lib/commons:net',
   ],
 )
