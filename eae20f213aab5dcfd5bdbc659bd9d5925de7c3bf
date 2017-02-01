@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0705151b_5963424f",
+        "filename": "BUILD",
+        "patchSetId": 2
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1011323
+      },
+      "writtenOn": "Jan 31, 2017 10:54:20 PM",
+      "side": 1,
+      "message": "That\u0027s confusing, I know, but provided_deps in Bazel has nothing todo with provided_deps in Buck. I think it\u0027s my fault, sorry, for that. See this upstream issue: [1].\n\nYou need neverlink , that we define in maven_jar now:\n\n  deps \u003d [\n      \"@commons_net//jar:neverlink\",\n  ]\n\nHow could you yourself track down the problem? Just look inside built artifact. My suggestion: [2]. Your original version: [3]. You see the difference?\n\n* [1] https://github.com/bazelbuild/bazel/issues/1402\n* [2] http://paste.openstack.org/show/597128\n* [3] http://paste.openstack.org/show/597130",
+      "range": {
+        "startLine": 13,
+        "startChar": 4,
+        "endLine": 16,
+        "endChar": 6
+      },
+      "revId": "eae20f213aab5dcfd5bdbc659bd9d5925de7c3bf",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": false
+    }
+  ]
+}
