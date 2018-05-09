@@ -16,6 +16,24 @@
       "revId": "38762fca5848bf0f012581f1daf4ce8201a689c2",
       "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2deed8c4_56e0058f",
+        "filename": ".gitignore",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1010813
+      },
+      "writtenOn": "2018-05-09T10:52:05Z",
+      "side": 1,
+      "message": "I believe it happens when Eclipse builds the project (typically auto-build is enabled). No you shouldn\u0027t do that, but it\u0027s easy to do.",
+      "parentUuid": "2f5cf21c_f7896ed1",
+      "revId": "38762fca5848bf0f012581f1daf4ce8201a689c2",
+      "serverId": "173816e5-2b9a-37c3-8a2e-48639d4f1153",
+      "unresolved": true
     }
   ]
 }
