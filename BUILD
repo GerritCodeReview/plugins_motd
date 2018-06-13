@@ -11,6 +11,6 @@ gerrit_plugin(
         "Implementation-URL: https://gerrit.googlesource.com/plugins/motd",
     ],
     deps = [
-        "@commons_net//jar:neverlink",
+        "@commons-net//jar:neverlink",
     ],
 )
