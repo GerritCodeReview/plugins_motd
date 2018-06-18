@@ -19,15 +19,13 @@ import com.google.gerrit.server.CurrentUser;
 import com.google.gerrit.server.git.validators.UploadValidationListener;
 import com.google.gerrit.server.validators.ValidationException;
 import com.google.inject.Inject;
-
-import org.eclipse.jgit.lib.ObjectId;
-import org.eclipse.jgit.lib.Repository;
-import org.eclipse.jgit.transport.UploadPack;
-
 import java.io.PrintWriter;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Collection;
+import org.eclipse.jgit.lib.ObjectId;
+import org.eclipse.jgit.lib.Repository;
+import org.eclipse.jgit.transport.UploadPack;
 
 class DisplayMotd implements UploadValidationListener {
   private final CurrentUser user;
@@ -40,9 +38,14 @@ class DisplayMotd implements UploadValidationListener {
   }
 
   @Override
-  public void onPreUpload(Repository repository, Project project,
-      String remote, UploadPack up, Collection<? extends ObjectId> wants,
-      Collection<? extends ObjectId> haves) throws ValidationException {
+  public void onPreUpload(
+      Repository repository,
+      Project project,
+      String remote,
+      UploadPack up,
+      Collection<? extends ObjectId> wants,
+      Collection<? extends ObjectId> haves)
+      throws ValidationException {
     PrintWriter pw = new PrintWriter(up.getMessageOutputStream());
 
     if (config.getMotd() != null) {

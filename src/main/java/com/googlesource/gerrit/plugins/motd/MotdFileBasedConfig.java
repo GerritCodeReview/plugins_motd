@@ -19,19 +19,17 @@ import com.google.common.collect.Lists;
 import com.google.gerrit.server.config.SitePaths;
 import com.google.inject.Inject;
 import com.google.inject.Singleton;
-
+import java.io.File;
+import java.io.IOException;
+import java.util.Collections;
+import java.util.List;
+import java.util.Set;
 import org.apache.commons.net.util.SubnetUtils;
 import org.eclipse.jgit.errors.ConfigInvalidException;
 import org.eclipse.jgit.storage.file.FileBasedConfig;
 import org.eclipse.jgit.util.FS;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.Collections;
-import java.util.List;
-import java.util.Set;
 
 @Singleton
 public class MotdFileBasedConfig implements MotdConfig {
@@ -42,8 +40,7 @@ public class MotdFileBasedConfig implements MotdConfig {
   private final FileBasedConfig config;
 
   @Inject
-  public MotdFileBasedConfig(final SitePaths site)
-      throws ConfigInvalidException, IOException {
+  public MotdFileBasedConfig(final SitePaths site) throws ConfigInvalidException, IOException {
     this.cfgPath = new File(site.etc_dir.toFile(), "motd.config");
     log.info("Loading configuration from " + cfgPath);
     this.config = new FileBasedConfig(cfgPath, FS.DETECTED);
@@ -62,24 +59,22 @@ public class MotdFileBasedConfig implements MotdConfig {
 
   private List<Subnet> allSubnets() throws ConfigInvalidException, IOException {
     if (!config.getFile().exists()) {
-      log.warn("Config file " + config.getFile()
-          + " does not exist; not providing messages");
+      log.warn("Config file " + config.getFile() + " does not exist; not providing messages");
       return Collections.emptyList();
     }
     if (config.getFile().length() == 0) {
-      log.info("Config file " + config.getFile()
-          + " is empty; not providing messages");
+      log.info("Config file " + config.getFile() + " is empty; not providing messages");
       return Collections.emptyList();
     }
 
     try {
       config.load();
     } catch (ConfigInvalidException e) {
-      throw new ConfigInvalidException(String.format(
-          "Config file %s is invalid: %s", config.getFile(), e.getMessage()), e);
+      throw new ConfigInvalidException(
+          String.format("Config file %s is invalid: %s", config.getFile(), e.getMessage()), e);
     } catch (IOException e) {
-      throw new IOException(String.format("Cannot read %s: %s",
-          config.getFile(), e.getMessage()), e);
+      throw new IOException(
+          String.format("Cannot read %s: %s", config.getFile(), e.getMessage()), e);
     }
 
     String[] motdLines = config.getStringList("gerrit", null, "motd");
@@ -88,8 +83,7 @@ public class MotdFileBasedConfig implements MotdConfig {
     ImmutableList.Builder<Subnet> subnetlist = ImmutableList.builder();
     for (SubnetConfig c : allSubnets(config)) {
       if (c.getMotd().isEmpty()) {
-        log.warn("Subnet configuration for " + c.getSubnet()
-            + " has no message");
+        log.warn("Subnet configuration for " + c.getSubnet() + " has no message");
         continue;
       }
 

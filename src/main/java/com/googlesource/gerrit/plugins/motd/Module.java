@@ -16,20 +16,17 @@ package com.googlesource.gerrit.plugins.motd;
 
 import com.google.gerrit.extensions.events.LifecycleListener;
 import com.google.gerrit.extensions.registration.DynamicSet;
+import com.google.gerrit.server.git.validators.UploadValidationListener;
 import com.google.inject.AbstractModule;
 import com.google.inject.Scopes;
 import com.google.inject.internal.UniqueAnnotations;
 
-import com.google.gerrit.server.git.validators.UploadValidationListener;
-
 class Module extends AbstractModule {
   @Override
   protected void configure() {
-    DynamicSet.bind(binder(), UploadValidationListener.class).to(
-        DisplayMotd.class);
+    DynamicSet.bind(binder(), UploadValidationListener.class).to(DisplayMotd.class);
     bind(OnStartStop.class).in(Scopes.SINGLETON);
-    bind(LifecycleListener.class).annotatedWith(UniqueAnnotations.create()).to(
-        OnStartStop.class);
+    bind(LifecycleListener.class).annotatedWith(UniqueAnnotations.create()).to(OnStartStop.class);
     bind(MotdConfig.class).to(MotdFileBasedConfig.class);
   }
 }

@@ -22,5 +22,4 @@ public interface MotdConfig {
   String getMotd();
 
   boolean isEmpty();
-
 }
