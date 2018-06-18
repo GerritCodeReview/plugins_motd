@@ -69,8 +69,8 @@ class DisplayMotd implements UploadValidationListener {
   }
 
   private String format(String message) {
-    if (user.getUserName() != null) {
-      message = message.replace("${user}", user.getUserName());
+    if (user.getUserName().isPresent()) {
+      message = message.replace("${user}", user.getUserName().get());
     }
     return message;
   }
